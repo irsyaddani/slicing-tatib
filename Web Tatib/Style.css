@@ -793,15 +793,14 @@ p {
 
 /* FORM BUAT LAPORAN */
 .form-container {
+    margin: 113px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding: 22px 22px;
     gap: 32px;
     border-radius: 8px;
-    margin: 113px auto;
     border: 1px solid #dedede;
-    width: min-content;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 
 }
@@ -820,12 +819,11 @@ label {
     margin-bottom: 8px;
 }
 
-input,
-select {
-    margin-bottom: 16px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input{
+    padding: 14.5px 16px;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    color: var(--color-gray-200);
 }
 
 button {
@@ -839,4 +837,35 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+/* nopal */
+
+.title-row {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-manrope-bold);
+    gap: 12px;
+}
+
+.profil-toggle {
+    position: absolute;
+    display: none;
+    transform: translate(0px, 90px);
+    display: flex;
+    gap: 12px;
+    padding: 16px 18px;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px #dedede solid;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: var(--font-weight-manrope-semibold);
+    color: #000;
+}
+
+.profil-toggle-container {
+    display: flex;
+    gap: 8px;
 }
