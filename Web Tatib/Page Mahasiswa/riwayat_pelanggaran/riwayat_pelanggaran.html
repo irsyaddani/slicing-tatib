@@ -11,190 +11,107 @@
 
 <body>
     <!-- INI HEADER -->
-    <div class="header">
-        <div class="logo-section">
-            <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
-            <div class="tatib-polinema">TATIB POLINEMA</div>
-        </div>
-    
-        <div class="tab-section">
-            <a href="" class="nav-menu-active tab-home">
-                Home
-            </a>
-            <a href="" class="nav-menu tab-riwayat-pelanggaran">
-                Riwayat Pelanggaran
-            </a>
-            <a href="" class="nav-menu tab-panduan-tatib">
-                Panduan Tata Tertib
-            </a>
-        </div>
-        <div class="profil-section">
-            <div class="profil-container">
+        <div class="header">
+            <div class="logo-section">
                 <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
-                <div class="data-mhs">
-                    <div class="nama" style="font-size: 14px;">Max Smith</div>
-                    <div class="nim" style="font-size: 12px;">2241720101</div>
-                </div>
+                <!-- <div class="tatib-polinema">TATIB POLINEMA</div> -->
+                <p style="font-size: var(--font-size-xl); font-weight: var(--font-weight-manrope-bold);">TATIB POLINEMA</p>
             </div>
-            <img class="vuesaxoutlinearrow-down-icon" alt="" src="./public/vuesaxoutlinearrowdown.svg" />
+        
+            <div class="tab-section">
+                <a href="" class="nav-menu tab-home">
+                    Home
+                </a>
+                <a href="" class="nav-menu-active tab-riwayat-pelanggaran">
+                    Riwayat Pelanggaran
+                </a>
+                <a href="" class="nav-menu tab-panduan-tatib">
+                    Panduan Tata Tertib
+                </a>
+            </div>
+            <div class="profil-section">
+                <div class="profil-container">
+                    <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
+                    <div class="data-mhs">
+                        <!-- <div class="nama" style="font-size: 14px;">Max Smith</div> -->
+                        <!-- <div class="nim" style="font-size: 12px;">2241720101</div> -->
+        
+                        <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-sm);">Max Smith
+                        </p>
+                        <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-xs);">2241720101
+                        </p>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none">
+                    <path fill="#F8F8F8"
+                        d="M12.5 17.3c-.7 0-1.4-.27-1.93-.8L4.05 9.98a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l6.52 6.52c.48.48 1.26.48 1.74 0l6.52-6.52c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.52 6.52c-.53.53-1.23.8-1.93.8Z" />
+                </svg>
+            </div>
         </div>
-    </div>
 
     <!-- INI HTML RIWAYAT PELANGGARAN-->
-    <!-- <div class="container">
+    <div class="container-riwayat-pelanggaran">
         <div class="title">
-            <div class="pelanggaran-anda" style="font-size: 20px; font-weight: 800;">Pelanggaran Anda</div>
-            <div class="searchbar">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="9.21552" cy="9.21552" r="5.88495" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M16.6695 16.6695L13.3765 13.3765" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
+            <!-- <div class="pelanggaran-anda" style="font-size: 20px; font-weight: var(--font-weight-manrope-bold);">Pelanggaran Anda</div> -->
+             <p style="font-size: 20px; font-weight: var(--font-weight-manrope-bold);">Pelanggaran Anda</p>
+            <!-- <div class="searchbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                    <path fill="#1B1B1B" fill-opacity=".4"
+                        d="M9.583 18.125c-4.708 0-8.541-3.833-8.541-8.542 0-4.708 3.833-8.541 8.541-8.541 4.709 0 8.542 3.833 8.542 8.541 0 4.709-3.833 8.542-8.542 8.542Zm0-15.833c-4.025 0-7.291 3.275-7.291 7.291 0 4.017 3.266 7.292 7.291 7.292s7.292-3.275 7.292-7.292c0-4.016-3.267-7.291-7.292-7.291Zm8.75 16.666a.618.618 0 0 1-.441-.183l-1.667-1.667a.629.629 0 0 1 0-.883.629.629 0 0 1 .883 0l1.667 1.667a.629.629 0 0 1 0 .883.618.618 0 0 1-.442.183Z" />
                 </svg>
                 <input type="text" name="search" class="searchbox" placeholder="Search">
+            </div> -->
+            <div class="search-container">
+                <div class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                        <path fill="#1B1B1B" fill-opacity=".4"
+                            d="M9.583 18.125c-4.708 0-8.541-3.833-8.541-8.542 0-4.708 3.833-8.541 8.541-8.541 4.709 0 8.542 3.833 8.542 8.541 0 4.709-3.833 8.542-8.542 8.542Zm0-15.833c-4.025 0-7.291 3.275-7.291 7.291 0 4.017 3.266 7.292 7.291 7.292s7.292-3.275 7.292-7.292c0-4.016-3.267-7.291-7.292-7.291Zm8.75 16.666a.618.618 0 0 1-.441-.183l-1.667-1.667a.629.629 0 0 1 0-.883.629.629 0 0 1 .883 0l1.667 1.667a.629.629 0 0 1 0 .883.618.618 0 0 1-.442.183Z" />
+                    </svg>
+                </div>
+                <input type="text" class="search-input" placeholder="Cari berdasarkan NIM">
             </div>
-    
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Tanggal</th>
-                    <th>Nama Pelapor</th>
-                    <th>Pelanggaran</th>
-                    <th>Tingkat Pelanggaran</th>
-                    <th>Status</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10/10/8888</td>
-                    <td>M******* N***** H*****</td>
-                    <td>Berbusana tidak sopan dan tidak...</td>
-                    <td>Tingkat V</td>
-                    <td>
-                        <div class="status">
-                            <span class="dot"></span>
-                            Baru
-                        </div>
-                    </td>
-                    <td>
-                        <div class="buttonseedetail">
-                            Detail
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>10/10/8888</td>
-                    <td>M******* N***** H*****</td>
-                    <td>Berbusana tidak sopan dan tidak...</td>
-                    <td>Tingkat V</td>
-                    <td>
-                        <div class="status">
-                            <span class="dot" style="background-color: #F9CB40;"></span>
-                            Verifikasi
-                        </div>
-                    </td>
-                    <td>
-                        <div class="buttonseedetail" style="background-color: #D9D9D9; color: #9D9D9D;" >
-                            Detail
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>10/10/8888</td>
-                    <td>M******* N***** H*****</td>
-                    <td>Berbusana tidak sopan dan tidak...</td>
-                    <td>Tingkat V</td>
-                    <td>
-                        <div class="status">
-                            <span class="dot" style="background-color: #FC5B29;"></span>
-                            Dikerjakan
-                        </div>
-                    </td>
-                    <td>
-                        <div class="buttonseedetail" style="background-color: #F9CB40;">
-                            Kumpulkan
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>10/10/8888</td>
-                    <td>M******* N***** H*****</td>
-                    <td>Berbusana tidak sopan dan tidak...</td>
-                    <td>Tingkat V</td>
-                    <td>
-                        <div class="status">
-                            <span class="dot" style="background-color: #07AB3F;"></span>
-                            Selesai
-                        </div>
-                    </td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div> -->
-    <div class="container">
-        <div class="title">
-            <div class="pelanggaran-anda" style="font-size: 20px; font-weight: 600;">Data Mahasiswa</div>
-    
-            <div class="searchbar">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="9.21552" cy="9.21552" r="5.88495" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M16.6695 16.6695L13.3765 13.3765" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-                <input type="text" name="search" class="searchbox" placeholder="Search">
-            </div>
-    
-        </div>
-        <div class="tambahData">
-            <a href="" class="btnTambahData"
-                style="background-color: #07AB3F; color: #fff; padding: 10px; border-radius: 10px; text-decoration: none;">+
-                Tambah Data</a>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nama</th>
-                    <th>NIM</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Jurusan</th>
-                    <th>Program Studi</th>
-                    <th>Nomor Telepon</th>
-                    <th>Email</th>
-                    <th>Aksi</th>
-    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Max Smith</td>
-                    <td>224XXXX01</td>
-                    <td>30-12-2003</td>
-                    <td>Laki-laki</td>
-                    <td>Teknologi Informasi</td>
-                    <td>D-IV Teknik Informatika</td>
-                    <td>082xxxxxxxx12</td>
-                    <td>max.smith@email.com</td>
-                    <td>
-                        <div style="display: flex; flex-direction: row ;">
-                            <a href="#" class="btnEdit"
-                                style="background-color: #1D6FEA;  color: #fff; padding: 10px; border-radius: 10px; text-decoration: none; margin-right: 2px; padding-left: 18px; padding-right: 18px; margin-right: 8px;">Edit</a>
-                            <a href="" class="btnDel"
-                                style="background-color: #EE2200; color: #fff; padding: 10px; border-radius: 10px; text-decoration: none; ">Delete</a>
-    
-                        </div>
-    
-                    </td>
-                </tr>
-    
-    
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Nama Pelapor</th>
+                        <th class="pelanggaran-column">Pelanggaran</th>
+                        <th>Tingkat Pelanggaran</th>
+                        <th>Status</th>
+                        <th></th>
+                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/10/8888</td>
+                        <td>M******* N***** H*****</td>
+                        <td class="pelanggaran-column">Berkomunikasi dengan tidak sopan, baik tertulis atau tidak tertulis kepada mahasiswa, dosen, karyawan, atau orang lain.</td>
+                        <td>Tingkat V</td>
+                        <td>Baru</td>
+                        <td>
+                            <div style="display: flex; flex-direction: row ;">
+                                <a href="#" class="btnEdit"
+                                    style="background-color: #1D6FEA;  color: #fff; padding: 10px; border-radius: 8px; text-decoration: none; padding: 8px 22px; margin: 0 auto;">Detail</a>
+                            </div>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>10/10/8888</td>
+                            <td>M******* N***** H*****</td>
+                            <td class="pelanggaran-column">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, commodi nihil explicabo facilis aliquid tempore libero veniam aut vero rerum.Berkomunikasi dengan tidak sopan, baik tertulis atau tidak tertulis kepada mahasiswa, dosen, karyawan, atau orang lain.</td>
+                            <td>Tingkat V</td>
+                            <td>Baru</td>
+                            <td>
+                                <div style="display: flex; flex-direction: row; align-items: center;">
+                                    <a href="#" class="btnEdit"
+                                        style="background-color: #1D6FEA;  color: #fff; padding: 10px; border-radius: 8px; text-decoration: none; padding: 8px 22px; margin: 0 auto;">Detail</a>
+                                </div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
     </div>
 </body>
-
 </html>

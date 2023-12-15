@@ -375,13 +375,13 @@ td {
     width: 100%;
 }
 
-.searchbar {
+/* .searchbar {
     width: 370px;
     min-width: 260px;
-    padding: 16px 28px;
+    padding: 10px 28px;
     display: flex;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 64px;
     border: 1px solid #dedede;
 }
 
@@ -391,10 +391,34 @@ td {
     margin-left: 12px;
     background-color: transparent;
     border: none;
-    outline: none;
+    outline: none;
+} */
+
+.search-container {
+    position: relative;
+    display: flex;
+    /* margin: 20px; */
+    gap: 12px;
 }
 
-.container {
+.search-input {
+    padding: 16px 60px;
+    border-radius: 64px;
+    border: 1px solid #dedede;
+    outline: none;
+    width: 314px;
+    font-size: 14px;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.container-riwayat-pelanggaran {
     padding: 22px 28px;
     margin: 113px 55px;
     gap: 22px;
@@ -407,21 +431,22 @@ td {
 table {
     border-radius: 15px;
     border: 1px solid #ebebeb;
-    display: block;
-    overflow-x: auto;
+    /* display: block; */
+    /* overflow-x: auto; */
     text-align: left;
     border-collapse: collapse;
-    table-layout: fixed;
-    width: auto;
+    /* overflow: hidden; */
+    /* table-layout: fixed; */
+    /* width: auto; */
 }
 
 th {
-    padding: 20px 18px;
+    padding: 18px;
     width: 150px;
     font-weight: 500;
     font-size: 16px;
     color: #1b1b1b;
-    border-bottom: 1px #ebebeb solid;
+    /* border-bottom: 1px #ebebeb solid; */
     text-wrap: nowrap;
     background-color: #f9cb40;
 }
@@ -430,24 +455,31 @@ tbody tr:not(:last-child) {
     border-bottom: 1px solid #dedede;
 }
 
+td.pelanggaran-column, th.pelanggaran-column{
+    width: 100%;
+    text-wrap: wrap;
+}
+
 td {
     /* width: 100%; */
+    padding: 18px;
     max-width: 130px;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 20px 18px;
     font-weight: 500;
     font-size: 16px;
     color: #000;
     white-space: nowrap;
+    /* text-wrap: wrap; */
+    word-wrap: wrap;
+    vertical-align: top;
 }
 
 td:hover:not(:last-child) {
-    text-overflow: unset;
+    /* text-overflow: unset;
     white-space: wrap;
-    width: 100%;
+    width: 100%; */
 }
-
 
 .status {
     display: flex;
