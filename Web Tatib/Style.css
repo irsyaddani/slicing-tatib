@@ -78,11 +78,6 @@ body {
     z-index: 1000;
 }
 
-a.nav-menu, a.nav-menu-active{
-    text-decoration: none;
-    color: white;
-}
-
 .logo-section {
     display: flex;
     align-items: center;
@@ -106,6 +101,12 @@ a.nav-menu, a.nav-menu-active{
     cursor: pointer;
     height: 100%;
     gap: 40px;
+}
+
+a.nav-menu,
+a.nav-menu-active {
+    text-decoration: none;
+    color: white;
 }
 
 .nav-menu{
@@ -234,7 +235,7 @@ a.nav-menu, a.nav-menu-active{
     cursor: pointer;
     width: 100%;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 10px;
 }
 
@@ -244,7 +245,7 @@ a.nav-menu, a.nav-menu-active{
 
 
 /* CSS RIWAYAT PELANGGARAN */
-.vuesaxoutlinesearch-normal-icon {
+/* .vuesaxoutlinesearch-normal-icon {
     position: relative;
     width: 20px;
     height: 20px;
@@ -352,6 +353,134 @@ td {
 
 .buttonseedetail:hover {
     background-color: #1558c1;
+} */
+
+.vuesaxoutlinesearch-normal-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.value {
+    position: relative;
+    font-weight: 500;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.searchbar {
+    width: 370px;
+    min-width: 260px;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #dedede;
+}
+
+.searchbox {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.container {
+    padding: 22px 28px;
+    margin: 113px 55px;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+}
+
+table {
+    border-radius: 15px;
+    border: 1px solid #ebebeb;
+    display: block;
+    overflow-x: auto;
+    text-align: left;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: auto;
+}
+
+th {
+    padding: 20px 18px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1b1b1b;
+    border-bottom: 1px #ebebeb solid;
+    text-wrap: nowrap;
+    background-color: #f9cb40;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #dedede;
+}
+
+td {
+    /* width: 100%; */
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px 18px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    white-space: nowrap;
+}
+
+td:hover:not(:last-child) {
+    text-overflow: unset;
+    white-space: wrap;
+    width: 100%;
+}
+
+
+.status {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #1d6fea;
+    display: inline-block;
+}
+
+.buttonseedetail {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #1d6fea;
+    color: white;
+}
+
+.btnEdit:hover {
+    background-color: #1558c1 !important;
+}
+
+.btnDel:hover {
+    background-color: #C9280D !important;
+}
+
+.btnTambahData:hover {
+    background-color: #45a049 !important;
 }
 
 /* INI CSS AJUKAN BANDING */
