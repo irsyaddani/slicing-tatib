@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" /> -->
+</head>
+<body>
+    <!-- INI HEADER -->
+    <div class="header">
+        <div class="logo-section">
+            <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
+            <!-- <div class="tatib-polinema">TATIB POLINEMA</div> -->
+            <p style="font-size: var(--font-size-xl); font-weight: var(--font-weight-manrope-bold);">TATIB POLINEMA</p>
+        </div>
+    
+        <div class="tab-section">
+            <a href="" class="nav-menu-active tab-home">
+                Home
+            </a>
+            <a href="" class="nav-menu tab-riwayat-pelanggaran">
+                Riwayat Pelanggaran
+            </a>
+            <a href="" class="nav-menu tab-panduan-tatib">
+                Panduan Tata Tertib
+            </a>
+        </div>
+        <div class="profil-section">
+            <div class="profil-container">
+                <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
+                <div class="data-mhs">
+                    <!-- <div class="nama" style="font-size: 14px;">Max Smith</div> -->
+                    <!-- <div class="nim" style="font-size: 12px;">2241720101</div> -->
+    
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-sm);">Max Smith
+                    </p>
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-xs);">2241720101
+                    </p>
+                </div>
+            </div>
+            <img class="vuesaxoutlinearrow-down-icon" alt="" src="./public/vuesaxoutlinearrowdown.svg" />
+        </div>
+    </div>
+
+    <!-- INI AJUKAN BANDING -->
+    <div class="form-banding">
+        <!-- <div class="title" style="font-size: 20px; font-weight: 800;">
+            Ajukan Banding
+        </div> -->
+        <p style="font-size: var(--font-size-xl); font-weight: var(--font-weight-manrope-bold);">Ajukan Banding</p>
+        <div class="isi-form-banding">
+            <div class="container-alasan">
+                <!-- <div class="title-form-banding" style="font-size: 16px; font-weight: 600;">
+                    Berikan alasan Anda*
+                </div> -->
+                <p style="font-weight: var(--font-weight-manrope-medium);">Berikan alasan Anda</p>
+                <!-- <input type="text" placeholder="Saya menolak laporan ini karena..." class="field_alasan" style="font-size: 14px; opacity: 40%;"> -->
+                <textarea name="" id="alasan-banding" cols="30" rows="10" placeholder="Saya menolak laporan ini karena..." class="field-alasan" style=" font-family: var( --font-manrope); font-size: var(--font-size-sm); opacity: 60%;"></textarea>
+            </div>
+            <div class="container-unggah-file">
+                <!-- <div class="title-unggah-file" style="font-size: 16px; font-weight: 600;"8>
+                    Unggah Bukti
+                </div> -->
+                <p style="font-weight: var(--font-weight-manrope-medium);">Unggah bukti</p>
+                <label for="input-file">
+                    <div class="div" style="display: flex;">
+                        <input type="text" id="file-name" value="JPG, PNG, atau PDF" style="font-size: 14px; opacity: 60%;"disabled>
+                        <div class="btn-unggah">
+                            Pilih File
+                        </div>
+                    </div>
+                    <input type="file" id="input-file">
+                </label>
+            </div>
+        </div>
+        <div class="btn-kirim">
+            <div class="value-btn">Kirim</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const inputFile = document.getElementById('input-file');
+                const fileNameInput = document.getElementById('file-name');
+
+                inputFile.addEventListener('change', function () {
+                    if (inputFile.files.length > 0) {
+                        // Get the file name from the file input
+                        const fileName = inputFile.files[0].name;
+
+                        // Set the file name to the disabled text input
+                        fileNameInput.value = fileName;
+                    } else {
+                        fileNameInput.value = ''; // If no file is selected, clear the value
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

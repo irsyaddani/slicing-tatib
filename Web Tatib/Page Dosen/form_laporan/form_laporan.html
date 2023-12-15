@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+<body>
+    <!-- <div class="form-laporan">
+        <div class="header-laporan">
+            <div class="icon-back">
+
+            </div>
+            <p>Buat Laporan</p>
+        </div>
+        <div class="container-field-input">
+            <div class="field-input">
+                <p>Tanggal*</p>
+                <label for=""></label>
+                <input type="date" class="" id="">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- INI HEADER -->
+    <div class="header">
+        <div class="logo-section">
+            <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
+            <!-- <div class="tatib-polinema">TATIB POLINEMA</div> -->
+            <p style="font-size: var(--font-size-xl); font-weight: var(--font-weight-manrope-bold);">TATIB POLINEMA</p>
+        </div>
+    
+        <div class="tab-section">
+            <a href="" class="nav-menu-active tab-home">
+                Home
+            </a>
+            <a href="" class="nav-menu tab-riwayat-pelanggaran">
+                Riwayat Pelaporan
+            </a>
+            <a href="" class="nav-menu tab-panduan-tatib">
+                Panduan Tata Tertib
+            </a>
+        </div>
+        <div class="profil-section">
+            <div class="profil-container">
+                <img class="logo-polinema-icon" alt="" src="./public/logo-polinema@2x.png" />
+                <div class="data-mhs">
+                    <!-- <div class="nama" style="font-size: 14px;">Max Smith</div> -->
+                    <!-- <div class="nim" style="font-size: 12px;">2241720101</div> -->
+    
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-sm);">Max Smith
+                    </p>
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-xs);">2241720101
+                    </p>
+                </div>
+            </div>
+            <img class="vuesaxoutlinearrow-down-icon" alt="" src="./public/vuesaxoutlinearrowdown.svg" />
+        </div>
+    </div>
+
+    <!-- INI FORM LAPORAN -->
+    <div class="form-container">
+        <!-- <h2>Buat Laporan</h2> -->
+        <p>Buat Laporan</p>
+    
+        <form id="reportForm">
+            <div class="input-field-laporan">
+                <label for="tanggal">Tanggal:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="input-field-laporan">
+                <label for="jam">Jam:</label>
+                <input type="time" id="jam" name="jam" required>
+            </div>
+            <!-- <div class="input-field-laporan">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+            </div> -->
+            <!-- <div class="input-field-laporan">
+                <label for="pelanggaran">Pelanggaran:</label>
+                <select id="pelanggaran" name="pelanggaran" required>
+                    <option value="1">Pelanggaran 1</option>
+                    <option value="2">Pelanggaran 2</option>
+                    <option value="3">Pelanggaran 3</option>
+                </select> -->
+            <div class="input-field-laporan">
+                <label for="nim">NIM:</label>
+                <select id="nim" name="nim" class="select2" style="width: 100%;" required>
+                    <option value-nim="1">NIM 1</option>
+                    <option value-nim="2">NIM 2</option>
+                    <option value-nim="3">NIM 3</option>
+                    <!-- Tambahkan opsi NIM lainnya sesuai kebutuhan -->
+                </select>
+            </div>
+            
+            <div class="input-field-laporan">
+                <label for="pelanggaran">Pelanggaran:</label>
+                <select id="pelanggaran" name="pelanggaran" class="select2" style="width: 100%;" required>
+                    <option value-pelanggaran="1">Pelanggaran 1</option>
+                    <option value-pelanggaran="2">Pelanggaran 2</option>
+                    <option value-pelanggaran="3">Pelanggaran 3</option>
+                    <!-- Tambahkan opsi pelanggaran lainnya sesuai kebutuhan -->
+                </select>
+            </div>
+            <div class="input-field-laporan">
+                <label for="sanksi">Sanksi:</label>
+                <input type="text" id="sanksi" name="sanksi" placeholder="Sanksi" disabled>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#nim').select2(); // Inisialisasi Select2 untuk field NIM
+            $('#pelanggaran').select2(); // Inisialisasi Select2 untuk field Pelanggaran
+        });
+    </script>
+</body>
+</html>
