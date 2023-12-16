@@ -402,12 +402,10 @@ td {
     border-radius: 15px;
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #1D6FEA;
-    display: inline-block;
+.container-status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 table {
@@ -485,9 +483,9 @@ td:hover:not(:last-child) {
     color: white;
 }
 
-.btnEdit:hover {
+/* .btnEdit:hover {
     background-color: #1558c1 !important;
-}
+} */
 
 .btnDel:hover {
     background-color: #C9280D !important;
