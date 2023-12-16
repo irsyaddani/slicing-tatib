@@ -440,6 +440,11 @@ td.pelanggaran-column, th.pelanggaran-column{
     text-wrap: wrap;
 }
 
+td.nama-pelapor-column, th.pelanggaran-column{
+    flex-grow: 1;
+    text-wrap: wrap;
+}
+
 td {
     /* width: 100%; */
     padding: 18px;
