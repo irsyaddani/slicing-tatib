@@ -11,22 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </head>
 <body>
-    <!-- <div class="form-laporan">
-        <div class="header-laporan">
-            <div class="icon-back">
-
-            </div>
-            <p>Buat Laporan</p>
-        </div>
-        <div class="container-field-input">
-            <div class="field-input">
-                <p>Tanggal*</p>
-                <label for=""></label>
-                <input type="date" class="" id="">
-            </div>
-        </div>
-    </div> -->
-
     <!-- INI HEADER -->
     <div class="header">
         <div class="logo-section">
@@ -62,7 +46,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none">
                 <path fill="#F8F8F8" d="M12.5 17.3c-.7 0-1.4-.27-1.93-.8L4.05 9.98a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l6.52 6.52c.48.48 1.26.48 1.74 0l6.52-6.52c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.52 6.52c-.53.53-1.23.8-1.93.8Z"/>
             </svg>
-            <div class="profil-toggle">
+            <!-- <div class="profil-toggle">
                 <div class="profil-toggle-container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
                         <path fill="#1B1B1B" d="M4.635 17.062c-.075 0-.158-.007-.225-.015l-1.628-.225c-.78-.105-1.485-.802-1.605-1.597l-.225-1.643c-.075-.525.15-1.207.525-1.59L4.77 8.7a6.212 6.212 0 0 1 1.65-5.933 6.254 6.254 0 0 1 8.82 0 6.194 6.194 0 0 1 1.822 4.41 6.194 6.194 0 0 1-1.822 4.41c-1.575 1.56-3.818 2.175-5.933 1.635l-3.3 3.293c-.315.33-.877.547-1.372.547ZM10.822 2.07a5.086 5.086 0 0 0-3.615 1.492A5.102 5.102 0 0 0 5.932 8.7a.56.56 0 0 1-.142.562l-3.525 3.525c-.128.128-.233.458-.21.63l.225 1.643c.045.285.352.607.637.645l1.635.225c.18.03.51-.075.638-.203l3.54-3.532a.56.56 0 0 1 .562-.135c1.808.57 3.78.082 5.13-1.268a5.089 5.089 0 0 0 1.493-3.615 5.076 5.076 0 0 0-1.493-3.615 5.045 5.045 0 0 0-3.6-1.492Z"/>
@@ -79,84 +63,72 @@
                     </svg>                    
                     Log Out
                 </div>
-            </div>            
+            </div>             -->
         </div>
     </div>
 
     <!-- INI FORM LAPORAN -->
     <div class="form-container">
-        <!-- <h2>Buat Laporan</h2> -->
         <div class="title-row">
             <div onclick="history.back()" style="display: flex;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none">
-                    <path fill="#292D32" d="M9.57 19.32c-.19 0-.38-.07-.53-.22l-6.07-6.07a.754.754 0 0 1 0-1.06L9.04 5.9c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06L4.56 12.5l5.54 5.54c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22Z"/>
-                    <path fill="#292D32" d="M20.5 13.25H3.67c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H20.5c.41 0 .75.34.75.75s-.34.75-.75.75Z"/>
-                </svg>            
+                    <path fill="#292D32"
+                        d="M9.57 19.32c-.19 0-.38-.07-.53-.22l-6.07-6.07a.754.754 0 0 1 0-1.06L9.04 5.9c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06L4.56 12.5l5.54 5.54c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22Z" />
+                    <path fill="#292D32"
+                        d="M20.5 13.25H3.67c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H20.5c.41 0 .75.34.75.75s-.34.75-.75.75Z" />
+                </svg>
             </div>
             Buat Laporan
         </div>
-    
-        <form id="reportForm" style="display: flex; gap: 16px;">
-            <div class="input-field-laporan">
-                <label for="tanggal">Tanggal:</label>
-                <input type="date" id="tanggal" name="tanggal" required>
-            </div>
-            <div class="input-field-laporan">
-                <label for="jam">Jam:</label>
-                <input type="time" id="jam" name="jam" required>
-            </div>
-            <!-- <div class="input-field-laporan">
-                <label for="nim">NIM:</label>
-                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
-            </div> -->
-            <!-- <div class="input-field-laporan">
-                <label for="pelanggaran">Pelanggaran:</label>
-                <select id="pelanggaran" name="pelanggaran" required>
-                    <option value="1">Pelanggaran 1</option>
-                    <option value="2">Pelanggaran 2</option>
-                    <option value="3">Pelanggaran 3</option>
-                </select> -->
-            <div class="input-field-laporan">
-                <label for="nim">NIM:</label>
-                <select id="nim" name="nim" class="select2" style="width: 100%;" required>
-                    <option value-nim="1">NIM 1</option>
-                    <option value-nim="2">NIM 2</option>
-                    <option value-nim="3">NIM 3</option>
-                    <!-- Tambahkan opsi NIM lainnya sesuai kebutuhan -->
-                </select>
-            </div>
+        <div class="form-content">
+            <form id="reportForm">
+                <div class="input-field-laporan">
+                    <label for="tanggal">Tanggal</label>
+                    <input type="date" id="tanggal" name="tanggal" style="font-weight: var(--font-weight-manrope-medium); font-size: var(--font-size-sm);" required>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="jam">Jam</label>
+                    <input type="time" id="jam" name="jam" required>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="nim">NIM</label>
+                    <select id="nim" name="nim" class="select2" required>
+                        <option value-nim="1">NIM 1</option>
+                        <option value-nim="2">NIM 2</option>
+                        <option value-nim="3">NIM 3</option>
+                    </select>
+                </div>
             
-            <div class="input-field-laporan">
-                <label for="pelanggaran">Pelanggaran:</label>
-                <select id="pelanggaran" name="pelanggaran" class="select2" style="width: 100%;" required>
-                    <option value-pelanggaran="1">Pelanggaran 1</option>
-                    <option value-pelanggaran="2">Pelanggaran 2</option>
-                    <option value-pelanggaran="3">Pelanggaran 3</option>
-                    <!-- Tambahkan opsi pelanggaran lainnya sesuai kebutuhan -->
-                </select>
-            </div>
-            <div class="input-field-laporan">
-                <label for="sanksi">Sanksi:</label>
-                <input type="text" id="sanksi" name="sanksi" placeholder="Sanksi" disabled>
-            </div>
-            <div class="container-unggah-file">
-                <!-- <div class="title" style="font-size: 16px; font-weight: 600;" 8>
-                    Pengumpulan Sanksi*
-                </div> -->
-                Pengumpulan Sanksi*
-                <label for="input-file">
-                    <div class="div" style="display: flex;">
-                        <input type="text" id="file-name" value="JPG, PNG, atau PDF" style="font-size: 14px; opacity: 60%;"
-                            disabled>
-                        <div class="btn-unggah">
-                            Pilih File
+                <div class="input-field-laporan">
+                    <label for="pelanggaran">Pelanggaran</label>
+                    <select id="pelanggaran" name="pelanggaran" class="select2" style="width: 100%;" required>
+                        <option value-pelanggaran="1">Pelanggaran 1</option>
+                        <option value-pelanggaran="2">Pelanggaran 2</option>
+                        <option value-pelanggaran="3">Pelanggaran 3</option>
+                    </select>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="sanksi">Sanksi</label>
+                    <input type="text" id="sanksi" name="sanksi" placeholder="Sanksi" disabled>
+                </div>
+                <div class="container-unggah-file">
+                    <label for="input-file">
+                        Bukti Foto
+                        <div class="div" style="display: flex;">
+                            <input type="text" id="file-name" value="JPG, PNG, atau PDF" style="font-size: 14px; opacity: 60%;"
+                                disabled>
+                            <div class="btn-unggah">
+                                Pilih File
+                            </div>
                         </div>
-                    </div>
-                    <input type="file" id="input-file" accept=".jpg, .png, .pdf">
-                </label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+                        <input type="file" id="input-file" accept=".jpg, .png, .pdf">
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="btn-kirim">
+            <div class="value-btn">Kirim</div>
+        </div>
     </div>
 
     <script>
