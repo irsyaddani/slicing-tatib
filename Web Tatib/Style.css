@@ -123,6 +123,7 @@ a.nav-menu-active {
     height: 100%;
     border: 4px transparent solid;
     border-bottom: var(--yellow) solid 4px;
+    border-top: 4px solid transparent;
 }
 
 .value {
@@ -335,14 +336,6 @@ td {
     align-items: center;
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #1D6FEA;
-    display: inline-block;
-}
-
 .buttonseedetail {
     text-align: center;
     padding: 10px;
@@ -376,26 +369,31 @@ td {
     width: 100%;
 }
 
-.searchbar {
-    width: 370px;
-    min-width: 260px;
-    padding: 16px 28px;
+.search-container {
+    position: relative;
     display: flex;
-    align-items: center;
-    border-radius: 100px;
+    /* margin: 20px; */
+    gap: 12px;
+}
+
+.search-input {
+    padding: 16px 60px;
+    border-radius: 64px;
     border: 1px solid #dedede;
-}
-
-.searchbox {
-    width: 100%;
-    font-size: 16px;
-    margin-left: 12px;
-    background-color: transparent;
-    border: none;
     outline: none;
+    width: 314px;
+    font-size: 14px;
 }
 
-.container {
+.search-button {
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.container-riwayat-pelanggaran {
     padding: 22px 28px;
     margin: 113px 55px;
     gap: 22px;
@@ -405,24 +403,31 @@ td {
     border-radius: 15px;
 }
 
+.container-status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 table {
     border-radius: 15px;
     border: 1px solid #ebebeb;
-    display: block;
-    overflow-x: auto;
+    /* display: block; */
+    /* overflow-x: auto; */
     text-align: left;
     border-collapse: collapse;
-    table-layout: fixed;
-    width: auto;
+    /* overflow: hidden; */
+    /* table-layout: fixed; */
+    /* width: auto; */
 }
 
 th {
-    padding: 20px 18px;
+    padding: 18px;
     width: 150px;
     font-weight: 500;
     font-size: 16px;
     color: #1b1b1b;
-    border-bottom: 1px #ebebeb solid;
+    /* border-bottom: 1px #ebebeb solid; */
     text-wrap: nowrap;
     background-color: #f9cb40;
 }
@@ -431,24 +436,42 @@ tbody tr:not(:last-child) {
     border-bottom: 1px solid #dedede;
 }
 
+td.pelanggaran-column, th.pelanggaran-column{
+    width: 100%;
+    text-wrap: wrap;
+    
+}
+ 
+td.nama-pelapor-column,
+td.nama-terlapor-column, 
+td.nim-terlapor-column,
+th.nama-pelapor-column,
+th.nama-terlapor-column, 
+th.nim-terlapor-column {
+    flex-grow: 1;
+    text-wrap: wrap;
+}
+
 td {
     /* width: 100%; */
+    padding: 18px;
     max-width: 130px;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 20px 18px;
     font-weight: 500;
     font-size: 16px;
     color: #000;
     white-space: nowrap;
+    /* text-wrap: wrap; */
+    word-wrap: wrap;
+    vertical-align: top;
 }
 
 td:hover:not(:last-child) {
-    text-overflow: unset;
+    /* text-overflow: unset;
     white-space: wrap;
-    width: 100%;
+    width: 100%; */
 }
-
 
 .status {
     display: flex;
@@ -472,9 +495,9 @@ td:hover:not(:last-child) {
     color: white;
 }
 
-.btnEdit:hover {
+/* .btnEdit:hover {
     background-color: #1558c1 !important;
-}
+} */
 
 .btnDel:hover {
     background-color: #C9280D !important;
@@ -540,7 +563,7 @@ td:hover:not(:last-child) {
 }
 
 .div input[type="text"] {
-    padding: 10px 14px;
+    padding: 12px 14px;
     flex: 1;
     margin-bottom: 0px;
     /* margin-right: 8px; */
@@ -552,7 +575,7 @@ td:hover:not(:last-child) {
 }
 
 .btn-unggah {
-    padding: 8px 20px;
+    padding: 10px 20px;
     background-color: #1D6FEA;
     color: white;
     font-weight: 500; 
@@ -853,27 +876,8 @@ p {
     border-radius: 15px;
     border: solid 1px var(--color-gainsboro);
     width: 100%;
+    gap: 10px;
 }
-
-/* .tingkat-pelanggaran {
-    font-weight: bold;
-}
-
-.jumlah-pelanggaran {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-}
-
-.jumlah-pelanggaran .angka {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.jumlah-pelanggaran .deskripsi {
-    font-size: 14px;
-} */
 
 .container-biodata-laporan {
     display: flex;
@@ -923,8 +927,8 @@ p {
 
 /* FORM BUAT LAPORAN */
 .form-container {
-    max-width: 650px;
-    margin: 120px auto;
+    margin: 113px auto;
+    width: 60%;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -939,6 +943,13 @@ p {
 form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .input-field-laporan {
@@ -969,7 +980,7 @@ label {
 }
 
 input{
-    padding: 14.5px 16px;
+    padding: 12px 16px;
     border: 1px solid #DEDEDE;
     border-radius: 8px;
     color: var(--color-gray-200);
@@ -1024,6 +1035,47 @@ button:hover {
     display: flex;
     gap: 8px;
 }
+
+/* HOMEPAGE ADMIN */
+.homepage-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    margin: 113px auto;
+}
+
+.verif-banding {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 113px auto;
+    gap: 40px;
+
+}
+
+.container-laporan-pelanggaran {
+    padding: 22px 28px;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.ajuan-banding {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 22px 22px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    gap: 32px;
+}
+
 
 select {
     padding: 14.5px 16px;
