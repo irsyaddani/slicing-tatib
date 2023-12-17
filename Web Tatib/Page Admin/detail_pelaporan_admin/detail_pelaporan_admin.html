@@ -115,19 +115,12 @@
             
             <!-- INI AJUAN BANDING OLEH TERLAPOR -->
             <div class="ajuan-banding">
-                <!-- <div class="title" style="font-size: 20px; font-weight: 800;">
-                            Ajukan Banding
-                        </div> -->
                 <div class="title-row">
                     Ajuan Banding oleh Terlapor
                 </div>
                 <div class="isi-form-banding">
                     <div class="container-alasan">
-                        <!-- <div class="title-form-banding" style="font-size: 16px; font-weight: 600;">
-                                    Berikan alasan Anda*
-                                </div> -->
-                        <p style="font-weight: var(--font-weight-manrope-semibold);">Berikan alasan Anda</p>
-                        <!-- <input type="text" placeholder="Saya menolak laporan ini karena..." class="field_alasan" style="font-size: 14px; opacity: 40%;"> -->
+                        <p style="font-weight: var(--font-weight-manrope-semibold);">Alasan Banding</p>
                         <textarea name="" id="alasan-banding" cols="30" rows="10" placeholder="Saya menolak laporan ini karena..."
                             class="field-alasan"
                             style=" font-family: var( --font-manrope); font-size: var(--font-size-sm); opacity: 60%;"></textarea>
@@ -136,18 +129,20 @@
                         <p style="font-weight: var(--font-weight-manrope-semibold);">Bukti</p>
                         <label for="input-file">
                             <div class="div" style="display: flex;">
-                                <input type="text" id="file-name" value="JPG, PNG, atau PDF" style="font-size: 14px; opacity: 60%;"
+                                <input type="text" id="file-name" value="JPG, PNG, atau PDF" style="font-size: 14px; opacity: 60%; border-radius: 8%;"
                                     disabled>
-                                <div class="btn-unggah">
-                                    Pilih File
-                                </div>
                             </div>
                             <input type="file" id="input-file">
                         </label>
                     </div>
                 </div>
-                <div class="btn-kirim">
-                    <div class="value-btn">Kirim</div>
+                <div class="button-container">
+                    <div class="button" style="color: red; border: 1px solid red; background-color: white;">
+                        <div class="value-btn">Tolak Banding</div>
+                    </div>
+                    <div class="button">
+                        <div class="value-btn">Setujui Banding</div>
+                    </div>
                 </div>
             </div>
     </div>
