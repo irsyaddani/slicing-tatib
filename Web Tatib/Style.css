@@ -438,9 +438,15 @@ tbody tr:not(:last-child) {
 td.pelanggaran-column, th.pelanggaran-column{
     width: 100%;
     text-wrap: wrap;
+    
 }
-
-td.nama-pelapor-column, th.pelanggaran-column{
+ 
+td.nama-pelapor-column,
+td.nama-terlapor-column, 
+td.nim-terlapor-column,
+th.nama-pelapor-column,
+th.nama-terlapor-column, 
+th.nim-terlapor-column {
     flex-grow: 1;
     text-wrap: wrap;
 }
@@ -869,27 +875,8 @@ p {
     border-radius: 15px;
     border: solid 1px var(--color-gainsboro);
     width: 100%;
+    gap: 10px;
 }
-
-/* .tingkat-pelanggaran {
-    font-weight: bold;
-}
-
-.jumlah-pelanggaran {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-}
-
-.jumlah-pelanggaran .angka {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.jumlah-pelanggaran .deskripsi {
-    font-size: 14px;
-} */
 
 .container-biodata-laporan {
     display: flex;
@@ -1029,4 +1016,44 @@ button:hover {
     padding: 8px 0px;
     display: flex;
     gap: 8px;
+}
+
+/* HOMEPAGE ADMIN */
+.homepage-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    margin: 113px auto;
+}
+
+.verif-banding {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 113px auto;
+    gap: 40px;
+
+}
+
+.container-laporan-pelanggaran {
+    padding: 22px 28px;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.ajuan-banding {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 22px 22px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    gap: 32px;
 }
