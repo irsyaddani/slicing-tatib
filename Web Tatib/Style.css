@@ -121,6 +121,7 @@ a.nav-menu-active {
     justify-content: center;
     align-items: center;
     height: 100%;
+    border: 4px transparent solid;
     border-bottom: var(--yellow) solid 4px;
     border-top: 4px solid transparent;
 }
@@ -577,10 +578,10 @@ td:hover:not(:last-child) {
     padding: 10px 20px;
     background-color: #1D6FEA;
     color: white;
+    font-weight: 500; 
+    font-size: 14px;
     /* border: none; */
-    border-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-radius: 0px 8px 8px 0px;
     cursor: pointer;
     /* flex-grow: 1; */
 }
@@ -931,7 +932,7 @@ p {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 22px 22px;
+    padding: 22px;
     gap: 32px;
     border-radius: 15px;
     border: 1px solid #dedede;
@@ -956,6 +957,23 @@ form {
     flex-direction: column;
 }
 
+.input-field-laporan-radio {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.input-field-laporan-radio-option{
+    display: flex; 
+    gap: 8px; 
+    align-items: center; 
+    font-weight: 500;
+}
+
+input[type="radio"]:checked:before {
+    background: #999;
+}
+
 label {
     font-weight: var(--font-weight-manrope-semibold);
     margin-bottom: 8px;
@@ -977,7 +995,7 @@ button {
     color: #fff;
     padding: 12px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -1056,4 +1074,11 @@ button:hover {
     border: 1px solid #dedede;
     border-radius: 10px;
     gap: 32px;
+}
+
+
+select {
+    padding: 14.5px 16px;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
 }
