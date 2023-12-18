@@ -247,108 +247,6 @@ a.nav-menu-active {
 
 
 /* CSS RIWAYAT PELANGGARAN */
-/* .vuesaxoutlinesearch-normal-icon {
-    position: relative;
-    width: 20px;
-    height: 20px;
-}
-
-.value {
-    position: relative;
-    font-weight: 500;
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.searchbar {
-    width: 370px;
-    min-width: 260px;
-    padding: 16px 28px;
-    display: flex;
-    align-items: center;
-    border-radius: 100px;
-    border: 1px solid #dedede;
-
-}
-
-.searchbox {
-    width: 100%;
-    font-size: 16px;
-    margin-left: 12px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-
-.container {
-    padding: 22px 28px;
-    margin: 113px;
-    gap: 22px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #dedede;
-    border-radius: 15px;
-}
-
-table {
-    border-radius: 15px;
-    border: 1px solid #EBEBEB;
-    display: block;
-    overflow-x: auto;
-    text-align: left;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-th {
-    padding: 20px 18px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #1b1b1b;
-    border-bottom: 1px #EBEBEB solid;
-    text-wrap: nowrap;
-    background-color: #F9CB40;
-}
-
-tbody tr:not(:last-child) {
-    border-bottom: 1px solid #dedede;
-}
-
-td {
-    width: 100%;
-    padding: 20px 18px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000;
-    white-space: nowrap;
-}
-
-.status {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.buttonseedetail {
-    text-align: center;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #1D6FEA;
-    color: white;
-    cursor: pointer;
-}
-
-.buttonseedetail:hover {
-    background-color: #1558c1;
-} */
-
 .vuesaxoutlinesearch-normal-icon {
     position: relative;
     width: 20px;
@@ -412,10 +310,10 @@ td {
 table {
     border-radius: 15px;
     border: 1px solid #ebebeb;
-    /* display: block; */
-    /* overflow-x: auto; */
     text-align: left;
     border-collapse: collapse;
+    /* display: block; */
+    /* overflow-x: auto; */
     /* overflow: hidden; */
     /* table-layout: fixed; */
     /* width: auto; */
@@ -423,13 +321,13 @@ table {
 
 th {
     padding: 18px;
-    width: 150px;
     font-weight: 500;
     font-size: 16px;
     color: #1b1b1b;
-    /* border-bottom: 1px #ebebeb solid; */
     text-wrap: nowrap;
     background-color: #f9cb40;
+    /* width: 150px; */
+    /* border-bottom: 1px #ebebeb solid; */
 }
 
 tbody tr:not(:last-child) {
@@ -453,18 +351,18 @@ th.nim-terlapor-column {
 }
 
 td {
-    /* width: 100%; */
     padding: 18px;
-    max-width: 130px;
     overflow: hidden;
-    text-overflow: ellipsis;
     font-weight: 500;
     font-size: 16px;
     color: #000;
-    white-space: nowrap;
-    /* text-wrap: wrap; */
-    word-wrap: wrap;
     vertical-align: top;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* word-wrap: wrap; */
+    /* width: 100%; */
+    /* max-width: 130px; */
+    /* text-wrap: wrap; */
 }
 
 td:hover:not(:last-child) {
@@ -575,7 +473,7 @@ td:hover:not(:last-child) {
 }
 
 .btn-unggah {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #1D6FEA;
     color: white;
     font-weight: 500; 
@@ -1082,3 +980,84 @@ select {
     border: 1px solid #DEDEDE;
     border-radius: 8px;
 }
+
+/* TAB DATA DOSEN - ADMIN */
+.container-tambah-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-tambah-data {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-tambah-data:hover {
+    background-color: #45a049;
+}
+
+/* TAB DATA DOSEN */
+
+.nama-dosen-column {
+    /* text-wrap: wrap; */
+    /* width: 10%; */
+    /* flex-grow: 1;  */
+}
+
+td.nip-column, th.nip-column {
+    /* width: min-content !important; */
+}
+
+.email-column {
+    /* width: 20%; */
+}
+
+td.tgl-lahir-column,
+td.jenis-kelamin-column,
+td.telp-column {
+    width: 10% !important;
+}
+
+.button-edit-hapus {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.center-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 72px;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.red-button{
+    background: #EE2200 !important;
+}
+.blue-button{
+    background: #1D6FEA !important;
+}
+
+/* TAB DATA MHS */
+/* .nama-mhs-column,
+.jurusan-column,
+.prodi-column {
+    text-wrap: wrap;
+    flex-grow: 1;
+} */
+

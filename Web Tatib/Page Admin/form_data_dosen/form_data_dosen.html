@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Web Tatib/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+
+<body>
+    <!-- INI HEADER -->
+    <div class="header">
+        <div class="logo-section">
+            <img class="logo-polinema-icon" alt="" src="/Web Tatib/Logo Polinema.png" />
+            <p style="font-size: var(--font-size-xl); font-weight: var(--font-weight-manrope-bold);">TATIB POLINEMA</p>
+        </div>
+
+        <div class="tab-section">
+            <a href="" class="nav-menu tab-home">
+                Home
+            </a>
+            <a href="" class="nav-menu-active tab-riwayat-pelanggaran">
+                Dosen
+            </a>
+            <a href="" class="nav-menu tab-panduan-tatib">
+                Mahasiswa
+            </a>
+            <a href="" class="nav-menu tab-panduan-tatib">
+                Panduan Tata Tertib
+            </a>
+        </div>
+        <div class="profil-section">
+            <div class="profil-container">
+                <img class="logo-polinema-icon" alt="" src="/Web Tatib/Logo Polinema.png" />
+                <div class="data-mhs">
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-sm);">
+                        Fulan
+                    </p>
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-xs);">
+                        Admin
+                    </p>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none">
+                <path fill="#F8F8F8"
+                    d="M12.5 17.3c-.7 0-1.4-.27-1.93-.8L4.05 9.98a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l6.52 6.52c.48.48 1.26.48 1.74 0l6.52-6.52c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.52 6.52c-.53.53-1.23.8-1.93.8Z" />
+            </svg>
+        </div>
+    </div>
+    <!-- INI FORM Form Data Mahasiswa -->
+    <div class="form-container">
+        <div class="title-row">
+            <div onclick="history.back()" style="display: flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none">
+                    <path fill="#292D32"
+                        d="M9.57 19.32c-.19 0-.38-.07-.53-.22l-6.07-6.07a.754.754 0 0 1 0-1.06L9.04 5.9c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06L4.56 12.5l5.54 5.54c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22Z" />
+                    <path fill="#292D32"
+                        d="M20.5 13.25H3.67c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H20.5c.41 0 .75.34.75.75s-.34.75-.75.75Z" />
+                </svg>
+            </div>
+            Form Data Dosen
+        </div>
+        <div class="form-content">
+            <form id="reportForm" style="display: flex; gap: 16px;">
+                <div class="input-field-laporan">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="nim">NIP</label>
+                    <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                    <div class="input-field-laporan-radio">
+                        <div class="input-field-laporan-radio-option">
+                            <input type="radio" name="jenis_kelamin" value="L" checked>
+                            Laki-Laki
+                        </div>
+                        <div class="input-field-laporan-radio-option">
+                            <input type="radio" name="jenis_kelamin" value="P">
+                            Perempuan
+                        </div>
+                    </div>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="no_telp">Nomor Telepon</label>
+                    <input type="tel" id="no_telp" name="no_telp" placeholder="Masukkan nomor telepon" required>
+                </div>
+                <div class="input-field-laporan" style="margin-bottom: 12px;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                </div>
+            </form>
+        </div>
+        <div class="btn-kirim">
+            <div class="value-btn">Kirim</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#nim').select2(); // Inisialisasi Select2 untuk field NIM
+            $('#pelanggaran').select2(); // Inisialisasi Select2 untuk field Pelanggaran
+        });
+    </script>
+</body>
+
+</html>

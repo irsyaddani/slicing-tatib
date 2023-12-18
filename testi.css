@@ -1,0 +1,111 @@
+.container-riwayat-pelanggaran {
+    padding: 22px 28px;
+    margin: 113px 55px;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.container-tambah-search {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn-tambah-data {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-tambah-data:hover {
+    background-color: #45a049;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-button {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #1B1B1B;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-button svg {
+    fill: #fff;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    outline: none;
+    font-size: 14px;
+    width: 200px;
+}
+
+table {
+    border-radius: 15px;
+    border: 1px solid #ebebeb;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th {
+    padding: 18px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1b1b1b;
+    text-wrap: nowrap;
+    background-color: #f9cb40;
+}
+
+td {
+    padding: 18px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #dedede;
+}
+
+.button-edit-hapus {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.center-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.red-button {
+    background: #EE2200 !important;
+}
+
+.blue-button {
+    background: #1D6FEA !important;
+}
