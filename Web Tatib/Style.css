@@ -242,7 +242,7 @@ a.nav-menu-active {
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #45a049 !important;
 }
 
 
@@ -393,6 +393,35 @@ td:hover:not(:last-child) {
     color: white;
 }
 
+.btn-table-riwayat {
+    width: 110px;
+    background-color: #dedede;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 8px 22px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btnDetail {
+    background-color: #1D6FEA !important;
+}
+
+.btnDetail:hover {
+    background-color: #1558c1 !important;
+}
+
+.btnKumpulkan {
+    background-color: #FEBB3A !important;
+}
+
+.btnKumpulkan:hover {
+    background-color: #FBB020 !important;
+}
+
 /* .btnEdit:hover {
     background-color: #1558c1 !important;
 } */
@@ -485,7 +514,7 @@ td:hover:not(:last-child) {
 }
 
 .btn-unggah:hover {
-    background-color: #1558c1;
+    background-color: #1558c1 !important;
 }
 
 #input-file {
@@ -511,7 +540,7 @@ td:hover:not(:last-child) {
 }
 
 .btn-kirim:hover {
-    background-color: #45a049;
+    background-color: #45a049 !important;
 }
 
 /* CSS HOMEPAGE MHS */
@@ -812,7 +841,7 @@ p {
 }
 
 .btn-buat-laporan:hover {
-    background-color: #FBB020;
+    background-color: #FBB020 !important;
 }
 
 .empty-state > img {
@@ -898,7 +927,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049 !important;
 }
 
 /* nopal */
@@ -1000,7 +1029,7 @@ select {
 }
 
 .btn-tambah-data:hover {
-    background-color: #45a049;
+    background-color: #45a049 !important;
 }
 
 /* TAB DATA DOSEN */
@@ -1022,7 +1051,7 @@ td.nip-column, th.nip-column {
 td.tgl-lahir-column,
 td.jenis-kelamin-column,
 td.telp-column {
-    width: 10% !important;
+    width: 15% !important;
 }
 
 .button-edit-hapus {
@@ -1046,18 +1075,25 @@ td.telp-column {
     }
 }
 
-.red-button{
-    background: #EE2200 !important;
-}
-.blue-button{
+.edit-button{
     background: #1D6FEA !important;
 }
 
+.hapus-button{
+    background: #EE2200 !important;
+}
+
+.edit-button:hover {
+    background-color: #1558c1 !important;
+}
+
+.hapus-button:hover {
+    background-color: #C9280D !important;
+}
+
 /* TAB DATA MHS */
-/* .nama-mhs-column,
-.jurusan-column,
-.prodi-column {
+.tgl-lahir-column {
     text-wrap: wrap;
     flex-grow: 1;
-} */
+}
 
