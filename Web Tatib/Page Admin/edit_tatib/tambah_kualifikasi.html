@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Web Tatib/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+
+<body>
+    <!-- INI HEADER -->
+    <div class="header">
+        <div class="logo-section">
+            <img class="logo-polinema-icon" alt="" src="/Web Tatib/Logo Polinema.png" />
+            <p style="font-size: var(--font-size-xl); font-weight: var(--font-weight-manrope-bold);">TATIB POLINEMA</p>
+        </div>
+
+        <div class="tab-section">
+            <a href="" class="nav-menu tab-home">
+                Home
+            </a>
+            <a href="" class="nav-menu tab-riwayat-pelanggaran">
+                Dosen
+            </a>
+            <a href="" class="nav-menu tab-panduan-tatib">
+                Mahasiswa
+            </a>
+            <a href="" class="nav-menu-active tab-panduan-tatib">
+                Panduan Tata Tertib
+            </a>
+        </div>
+        <div class="profil-section">
+            <div class="profil-container">
+                <img class="logo-polinema-icon" alt="" src="/Web Tatib/Logo Polinema.png" />
+                <div class="data-mhs">
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-sm);">
+                        Fulan
+                    </p>
+                    <p style="font-weight: var(--font-weight-manrope-reguler); font-size: var(--font-size-xs);">
+                        Admin
+                    </p>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none">
+                <path fill="#F8F8F8"
+                    d="M12.5 17.3c-.7 0-1.4-.27-1.93-.8L4.05 9.98a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l6.52 6.52c.48.48 1.26.48 1.74 0l6.52-6.52c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.52 6.52c-.53.53-1.23.8-1.93.8Z" />
+            </svg>
+        </div>
+    </div>
+    <!-- INI FORM Form Data Mahasiswa -->
+    <div class="form-container">
+        <div class="title-row">
+            <div onclick="history.back()" style="display: flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none">
+                    <path fill="#292D32"
+                        d="M9.57 19.32c-.19 0-.38-.07-.53-.22l-6.07-6.07a.754.754 0 0 1 0-1.06L9.04 5.9c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06L4.56 12.5l5.54 5.54c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22Z" />
+                    <path fill="#292D32"
+                        d="M20.5 13.25H3.67c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H20.5c.41 0 .75.34.75.75s-.34.75-.75.75Z" />
+                </svg>
+            </div>
+            Tambah Kualifikasi Pelanggaran
+        </div>
+        <div class="form-content">
+            <form id="reportForm" style="display: flex; gap: 16px;">
+                <div class="input-field-laporan">
+                    <label for="no-urut">Nomor Urut</label>
+                    <input class="no-urut" type="text" id="no-urut" name="no-urut" placeholder="Masukkan Nomor Urut">
+                </div>
+                <div class="input-field-laporan">
+                    <label for="jenis-pelanggaran">Jenis Pelanggaran</label>
+                    <!-- <input type="text" id="nama" name="nama" placeholder="Masukkan jenis pelanggaran" required> -->
+                    <textarea name="jenis-pelanggaran" id="jenis" cols="20" rows="5"
+                        class="text-area" placeholder="Masukkan Jenis Pelanggaran"></textarea>
+                </div>
+                <div class="input-field-laporan">
+                    <label for="tingkat">Tingkat Pelanggaran</label>
+                    <select id="tingkat" name="tingkat" class="select2" style="width: 100%;" required>
+                        <option value-tingkat="1">I</option>
+                        <option value-tingkat="2">II</option>
+                        <option value-tingkat="3">III</option>
+                        <option value-tingkat="3">IV</option>
+                        <option value-tingkat="3">V</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="btn-kirim">
+            <div class="value-btn">Ubah</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#nim').select2(); // Inisialisasi Select2 untuk field NIM
+            $('#pelanggaran').select2(); // Inisialisasi Select2 untuk field Pelanggaran
+        });
+    </script>
+</body>
+
+</html>
